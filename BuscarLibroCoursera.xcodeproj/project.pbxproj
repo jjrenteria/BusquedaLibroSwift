@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		69B7C49B1CF78924003C1FD1 /* sin_portada.png in Resources */ = {isa = PBXBuildFile; fileRef = 69B7C49A1CF78924003C1FD1 /* sin_portada.png */; };
 		69FC95211CF64FE7002BE50C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FC95201CF64FE7002BE50C /* AppDelegate.swift */; };
 		69FC95231CF64FE7002BE50C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FC95221CF64FE7002BE50C /* ViewController.swift */; };
 		69FC95261CF64FE7002BE50C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69FC95241CF64FE7002BE50C /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		69B7C49A1CF78924003C1FD1 /* sin_portada.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sin_portada.png; sourceTree = "<group>"; };
 		69FC951D1CF64FE7002BE50C /* BuscarLibroCoursera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BuscarLibroCoursera.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69FC95201CF64FE7002BE50C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		69FC95221CF64FE7002BE50C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -57,6 +59,7 @@
 				69FC95201CF64FE7002BE50C /* AppDelegate.swift */,
 				69FC95221CF64FE7002BE50C /* ViewController.swift */,
 				69FC95241CF64FE7002BE50C /* Main.storyboard */,
+				69B7C49A1CF78924003C1FD1 /* sin_portada.png */,
 				69FC95271CF64FE7002BE50C /* Assets.xcassets */,
 				69FC95291CF64FE7002BE50C /* LaunchScreen.storyboard */,
 				69FC952C1CF64FE7002BE50C /* Info.plist */,
@@ -124,6 +127,7 @@
 			files = (
 				69FC952B1CF64FE7002BE50C /* LaunchScreen.storyboard in Resources */,
 				69FC95281CF64FE7002BE50C /* Assets.xcassets in Resources */,
+				69B7C49B1CF78924003C1FD1 /* sin_portada.png in Resources */,
 				69FC95261CF64FE7002BE50C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,6 +290,7 @@
 				69FC95311CF64FE7002BE50C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

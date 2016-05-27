@@ -1,25 +1,103 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BuscarLibroCoursera" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" prompt="Buscar libro" placeholder="ISBN" translatesAutoresizingMaskIntoConstraints="NO" id="Zmq-h3-guA">
+                                <rect key="frame" x="16" y="20" width="288" height="75"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" returnKeyType="search" enablesReturnKeyAutomatically="YES"/>
+                                <scopeButtonTitles>
+                                    <string>Title</string>
+                                    <string>Title</string>
+                                </scopeButtonTitles>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="MKl-X0-log"/>
+                                </connections>
+                            </searchBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Titulo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cDn-Cs-vDe">
+                                <rect key="frame" x="16" y="121" width="44" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i1T-0k-63D">
+                                <rect key="frame" x="98" y="121" width="206" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Autores" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HfP-nf-Nzv">
+                                <rect key="frame" x="16" y="159" width="60" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sin_portada.png" translatesAutoresizingMaskIntoConstraints="NO" id="gHd-Ck-qwr">
+                                <rect key="frame" x="75" y="420" width="170" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="opz-xZ-MFX"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="VtB-f3-FNh">
+                                <rect key="frame" x="16" y="190" width="288" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="cXw-oc-xAr"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="gHd-Ck-qwr" secondAttribute="bottom" constant="20" id="0gi-Sm-ZJL"/>
+                            <constraint firstItem="gHd-Ck-qwr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="59" id="0ni-Qa-J8h"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="Zmq-h3-guA" secondAttribute="leading" id="7Eh-Fm-WTh"/>
+                            <constraint firstItem="i1T-0k-63D" firstAttribute="top" secondItem="Zmq-h3-guA" secondAttribute="bottom" constant="26" id="7W5-lS-NNY"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="VtB-f3-FNh" secondAttribute="leading" id="A4I-t5-jnX"/>
+                            <constraint firstItem="HfP-nf-Nzv" firstAttribute="leading" secondItem="cDn-Cs-vDe" secondAttribute="leading" id="ORZ-jB-d1b"/>
+                            <constraint firstItem="cDn-Cs-vDe" firstAttribute="leading" secondItem="Zmq-h3-guA" secondAttribute="leading" id="OdX-Tv-HIu"/>
+                            <constraint firstItem="Zmq-h3-guA" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="XVf-pW-E0b"/>
+                            <constraint firstItem="i1T-0k-63D" firstAttribute="leading" secondItem="cDn-Cs-vDe" secondAttribute="trailing" constant="38" id="aX4-8j-ctZ"/>
+                            <constraint firstItem="VtB-f3-FNh" firstAttribute="top" secondItem="HfP-nf-Nzv" secondAttribute="bottom" constant="10" id="hrf-6N-6kQ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="i1T-0k-63D" secondAttribute="trailing" id="iiP-v4-6hb"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="VtB-f3-FNh" secondAttribute="trailing" id="nnr-Xd-s2f"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Zmq-h3-guA" secondAttribute="trailing" id="oHo-Mt-Gm2"/>
+                            <constraint firstItem="HfP-nf-Nzv" firstAttribute="top" secondItem="cDn-Cs-vDe" secondAttribute="bottom" constant="17" id="sWZ-YN-AIE"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="gHd-Ck-qwr" secondAttribute="trailing" constant="59" id="ufK-4K-oRP"/>
+                            <constraint firstItem="cDn-Cs-vDe" firstAttribute="top" secondItem="Zmq-h3-guA" secondAttribute="bottom" constant="26" id="xZh-VS-0Dd"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="autoresText" destination="VtB-f3-FNh" id="GGL-nP-KzD"/>
+                        <outlet property="barraBusqueda" destination="Zmq-h3-guA" id="u9c-om-x51"/>
+                        <outlet property="imagenLibro" destination="gHd-Ck-qwr" id="fk9-9H-zqR"/>
+                        <outlet property="tituloLibro" destination="i1T-0k-63D" id="pGQ-13-zJK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="161" y="343"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="sin_portada.png" width="84" height="115"/>
+    </resources>
 </document>
